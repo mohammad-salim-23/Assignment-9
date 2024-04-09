@@ -36,7 +36,7 @@ const Navbar = () => {
              {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl flex gap-0">Prop<span className="text-[#FFD700] font-bold text-2xl">Nets</span></a>
+          <a className="btn btn-ghost text-xl flex gap-0">Prop<span className="text-gold font-bold text-2xl">Nets</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <Link to="/login"><button className="btn bg-[#FFD700] font-bold ">Login</button></Link>
+        <Link to="/login"><button className="btn bg-gold text-white font-bold ">Login</button></Link>
         </div>
       </div>
     </div>
