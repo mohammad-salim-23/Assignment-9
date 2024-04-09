@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxury Villa with Ocean View",
+      "segment_name": "Premium",
+      "description": "A breathtaking luxury villa with stunning ocean views, perfect for those seeking the ultimate seaside retreat.",
+      "price": "$2,500,000",
+      "status": "Sale",
+      "area": "5000 sq. feet",
+      "location": "Malibu, California",
+      "facilities": ["Infinity Pool", "Spa", "Home Theater"],
+      "image": "https://as2.ftcdn.net/v2/jpg/06/68/96/71/1000_F_668967160_NZpIsTns7YK5eZFZwgPPOIAmwfoxmpnX.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Modern Downtown Loft",
+      "segment_name": "Urban",
+      "description": "Sleek and stylish loft apartment in the heart of the city, offering contemporary living at its finest.",
+      "price": "$3,500/month",
+      "status": "Rent",
+      "area": "1200 sq. feet",
+      "location": "New York City, New York",
+      "facilities": ["Open Concept Design", "Fitness Center", "Rooftop Terrace"],
+      "image": "https://as1.ftcdn.net/v2/jpg/06/41/62/04/1000_F_641620448_fZoNA9KD6bJfHuEN13zjB3FptNj49X4m.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Luxury Ski Chalet",
+      "segment_name": "Premium",
+      "description": "A charming ski chalet nestled in the mountains, boasting elegant interiors and panoramic views of the slopes.",
+      "price": "$1,800,000",
+      "status": "Sale",
+      "area": "3500 sq. feet",
+      "location": "Aspen, Colorado",
+      "facilities": ["Ski-in/Ski-out Access", "Hot Tub", "Stone Fireplace"],
+      "image": "https://as1.ftcdn.net/v2/jpg/06/78/34/54/1000_F_678345408_eaVE9uzJBtQD5KKoxDUkNWgqxIP3zqGm.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Beachfront Paradise",
+      "segment_name": "Premium",
+      "description": "An exquisite beachfront estate offering unparalleled luxury and privacy, with direct access to pristine sandy shores.",
+      "price": "$5,750,000",
+      "status": "Sale",
+      "area": "6000 sq. feet",
+      "location": "Maui, Hawaii",
+      "facilities": ["Private Beach Access", "Tropical Gardens", "Oceanfront Balconies"],
+      "image": "https://as2.ftcdn.net/v2/jpg/00/53/28/73/1000_F_53287313_eJuz4DoZDTekXbJUAJ9xmNiHRq4wANcf.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Charming Countryside Cottage",
+      "segment_name": "Standard",
+      "description": "A cozy countryside cottage surrounded by rolling hills and picturesque landscapes, ideal for peaceful retreats.",
+      "price": "$1,200/month",
+      "status": "Rent",
+      "area": "1500 sq. feet",
+      "location": "Cotswolds, England",
+      "facilities": ["Garden", "Fireplace", "Country-style Kitchen"],
+      "image": "https://t4.ftcdn.net/jpg/07/51/84/51/240_F_751845186_qBuLDyQMwIJYUbcdOzRAPgFDHgP7NqYC.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Luxury Penthouse with City Views",
+      "segment_name": "Premium",
+      "description": "A stunning penthouse apartment with breathtaking city views, offering unparalleled luxury and sophistication.",
+      "price": "$4,000,000",
+      "status": "Sale",
+      "area": "4000 sq. feet",
+      "location": "Los Angeles, California",
+      "facilities": ["Private Terrace", "Gourmet Kitchen", "Smart Home Technology"],
+      "image": "https://as2.ftcdn.net/v2/jpg/07/18/80/31/1000_F_718803126_aS6pcJ46veLYcRjvvsUnz1MliR6jx9dD.jpg"
+    }
+  ]
+  
