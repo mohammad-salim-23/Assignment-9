@@ -1,10 +1,11 @@
 import { useContext, useState } from "react";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link ,useNavigate,useLocation} from "react-router-dom";
 import { AuthContext } from "../AuthContexProvider/AuthContextProvider";
+import { updateProfile } from "firebase/auth";
 const Register = () => {
   const { createUser } = useContext(AuthContext);
- 
+ const [show,setShow] = useState(false);
   const handleRegister = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
@@ -27,14 +28,17 @@ const Register = () => {
     //    create User
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        result.user.updateProfile({
-            displayName:name,
-            photoURL:photo,
-        })
-        .then(()=>{
-            alert("Successfully Registered")
-        })
+      alert("successfully Register")
+          console.log(result.user);
+       updateProfile(result.user,{
+        displayName:name,
+        photoURL:"https://lh3.googleusercontent.com/a/ACg8ocK7na_sy6062FxXUfmpCxfY4eCpsE3S4tUjkSGjJU0lyr1W4ao=s96-c"
+      
+       })
+       .then(()=>{
+         console.log("profile updated successfully")
+       })
+       .catch()
       
       })
       .catch((error) => {
@@ -87,13 +91,20 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
-                <input
-                  type="password"
+              <div className="relative">
+              <input
+                  type={show ? "text":"password"}
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
                 />
+                <span className="absolute md:left-auto right-32 top-4" onClick={()=>(setShow(!show))}>
+                  {
+                    show? <FaEyeSlash/> : <FaEye/>
+                  }
+                </span>
+              </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
