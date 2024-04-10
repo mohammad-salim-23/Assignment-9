@@ -1,13 +1,25 @@
+import { useContext,useState } from "react";
 import {Link, NavLink} from "react-router-dom"
+import { AuthContext } from "../AuthContexProvider/AuthContextProvider";
+import userPic from "../assets/user.png"
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext);
+    const [userHover,setUserHover] = useState(false);
+    console.log(user);
     const navLinks = <>
      
      <li className="font-bold"><NavLink to="/">Home</NavLink></li>
-    <li className="font-bold"><NavLink to="/services">Our Services</NavLink></li>
+    <li className="font-bold"><NavLink to="/contact">Contact Us</NavLink></li>
     <li className="font-bold"><NavLink to="/update">Update Profile</NavLink></li>
+    <li className="font-bold"><NavLink to="/user">User Profile</NavLink></li>
      
     
     </>
+    const handleLogOut=()=>{
+        logOut()
+        .then()
+        .catch();
+    }
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -44,7 +56,18 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <Link to="/login"><button className="btn bg-gold text-white font-bold ">Login</button></Link>
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar )">
+                  {
+                    user ? <img  
+                   onMouseEnter={()=>setUserHover(true)}
+                   onMouseLeave={()=>setUserHover(false)}
+                    src={userPic} alt="" />:""
+                  }
+                 {userHover && user && user.displayName }  
+                </label>
+     {
+        user ? <Link><button className="btn bg-gold text-white font-bold" onClick={handleLogOut}>Sign Out</button></Link>   :<Link to="/login"><button className="btn bg-gold text-white font-bold ">Login</button></Link>
+     }
         </div>
       </div>
     </div>

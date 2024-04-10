@@ -8,6 +8,9 @@ import ViewProperty from "../components/ViewProperty";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Login from "../pages/Login";
 import Register from "../components/Register";
+import UpdateProfile from "../components/UpdateProfile";
+import ContactUs from "../components/ContactUs";
+import UsersProfile from "../components/UsersProfile";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -31,6 +34,18 @@ import Register from "../components/Register";
         {
             path:"/register",
             element:<Register></Register>
+        },
+        {
+            path:"/update",
+            element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+        },
+        {
+            path:"/contact",
+            element:<PrivateRoute><ContactUs></ContactUs></PrivateRoute>,
+        },
+        {
+            path:"/user",
+            element:<PrivateRoute><UsersProfile></UsersProfile></PrivateRoute>,
         }
 
        
