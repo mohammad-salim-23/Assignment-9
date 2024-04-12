@@ -1,8 +1,16 @@
-# React + Vite
+#PropNest Web Project
+Welcome to PropNest Web Project! This project is a Real Estate business related
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Live Demo
 
-Currently, two official plugins are available:
+Check out the live demo [here][https://oceanic-metal.surge.sh/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##Features
+
+1.Property Listing:Display a comprehensive list of available properties including houses, apartments, and commercial spaces.
+
+2.Property Details:
+ Provide detailed information about each property, including images, descriptions.
+ 3. User Authentication: Allow users to sign up, login, and manage their profiles.
+
+ 
