@@ -32,7 +32,7 @@ const ViewProperty = () => {
                <h3 className="text-xl">location:{location}</h3>
                <h3 className="text-xl">area:{area}</h3>
                </div>
-               <div className="bg-gray-400 text-black">
+               <div className="bg-gray-400 text-black mt-0">
                     <h3 className="font-bold">Facilities:</h3>
                     <ul>
                         {facilities.map((facility, index) => (
