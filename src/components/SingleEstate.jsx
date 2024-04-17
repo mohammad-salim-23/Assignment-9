@@ -5,7 +5,7 @@ const SingleEstate = ({ state }) => {
   console.log(state);
   const { estate_title, id, image, location, status, area } = state;
   return (
-    <div>
+    <div data-aos="fade-up">
       <div className="card w-96 bg-gold  shadow-xl">
         <figure className="px-10 pt-10">
           <img

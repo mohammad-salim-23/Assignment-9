@@ -32,8 +32,8 @@ const Register = () => {
           console.log(result.user);
        updateProfile(result.user,{
         displayName:name,
-        photoURL:"https://lh3.googleusercontent.com/a/ACg8ocK7na_sy6062FxXUfmpCxfY4eCpsE3S4tUjkSGjJU0lyr1W4ao=s96-c"
-      
+        // photoURL:"https://lh3.googleusercontent.com/a/ACg8ocK7na_sy6062FxXUfmpCxfY4eCpsE3S4tUjkSGjJU0lyr1W4ao=s96-c"
+        photoURL:`${photo}`,
        })
        .then(()=>{
          console.log("profile updated successfully")
