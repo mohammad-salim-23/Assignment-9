@@ -58,13 +58,14 @@ const Login = () => {
   return (
   <div>
    
-   <form onSubmit={handleLogin}>
+  
         <div className="hero-content flex-col ">
           <div className="text-center ">
             <h1 className="text-5xl font-bold">Login now!</h1>
           
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <form onSubmit={handleLogin}>
             <div className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -101,10 +102,12 @@ const Login = () => {
         <button className="btn bg-blue-400 mb-2" onClick={handlegoogleSignIn}>Google Login</button>
         <button className="btn bg-slate-500" onClick={handleGithubLogin}>GitHub Login</button>
             </div>
+            </form>
+            <p className="text-center mb-2">Do not have an account <Link className="text-blue-700 font-bold" to="/register">Register</Link></p>
           </div>
         </div>
-   </form>
-   <p className="text-center mt-4">Do not have an account <Link className="text-blue-700 font-bold" to="/register">Register</Link></p>
+   
+   
   </div>
      
   );

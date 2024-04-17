@@ -48,12 +48,13 @@ const Register = () => {
   return (
     <div>
      
-      <form onSubmit={handleRegister}>
+     
         <div className="hero-content flex-col ">
           <div className="text-center ">
             <h1 className="text-5xl font-bold">Please Register</h1>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <form onSubmit={handleRegister}>
             <div className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -115,15 +116,17 @@ const Register = () => {
                 <button className="btn bg-gold">Register</button>
               </div>
             </div>
-          </div>
-        </div>
-      </form>
-      <p className="text-center mt-4">
+            </form>
+            <p className="text-center mb-2">
         Already have an account{" "}
         <Link className="text-blue-500 font-bold" to="/login">
           Login
         </Link>
       </p>
+          </div>
+        </div>
+     
+     
     </div>
   );
 };
